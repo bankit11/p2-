@@ -1,0 +1,51 @@
+{
+	"empStr": {
+		"empNo": 130102023,
+		"empName": "Ankit",
+		"Salary": 1000,
+		"Currency": "INR"
+		
+	},
+	"empTab": [{
+		"empNo": 111,
+		"empName": "Ankit1",
+		"Salary": 111,
+		"Currency": "spi",
+		"Elg": true,
+		"Pic": "https://png.pngtree.com/png-clipart/20190520/original/pngtree-business-male-icon-vector-png-image_4187852.jpg"
+
+	}, {
+		"empNo": 222,
+		"empName": "Ankit2",
+		"Salary": 222,
+		"Currency": "spi",
+		"Elg": true,
+		"Pic": "https://png.pngtree.com/png-clipart/20190520/original/pngtree-business-male-icon-vector-png-image_4187852.jpg"
+
+	}, {
+		"empNo": 333,
+		"empName": "Ankit3",
+		"Salary": 333,
+		"Currency": "spi",
+		"Elg": false,
+		"Pic": "https://png.pngtree.com/png-clipart/20190520/original/pngtree-business-male-icon-vector-png-image_4187852.jpg"
+
+	}, {
+		"empNo": 444,
+		"empName": "Ankit4",
+		"Salary": 444,
+		"Currency": "spi",
+		"Elg": true,
+		"Pic": "https://png.pngtree.com/png-clipart/20190520/original/pngtree-business-male-icon-vector-png-image_4187852.jpg"
+
+
+	}, {
+		"empNo": 555,
+		"empName": "Ankit5",
+		"Salary": 555,
+		"Currency": "spi",
+		"Elg": true,
+		"Pic": "https://png.pngtree.com/png-clipart/20190520/original/pngtree-business-male-icon-vector-png-image_4187852.jpg"
+
+	}]
+}

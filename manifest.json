@@ -1,0 +1,11 @@
+{
+    "sap.app":{
+        "id": "demo",
+        "type": "application",
+        "applicationVersion":{
+            "version": "1.0.0"
+        }
+    },
+    "sap.ui":{},
+    "sap.ui5": {}
+}

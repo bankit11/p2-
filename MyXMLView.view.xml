@@ -1,0 +1,137 @@
+<mvc:View xmlns:mvc="sap.ui.core.mvc" 
+          controllerName="oft.fin.ar.controller.MyXMLView"  
+          xmlns="sap.m"
+           xmlns:cMsgst="sap.ui.core"
+          xmlns:cfrom="sap.ui.layout.form"
+          xmlns:ctable="sap.ui.table">
+<Page title = "Welcome To UI5">
+    <ctable:Table rows="{/empTab}">
+
+            <!-- <ctable:title>
+                <Label text="Title of Table"> </Label>
+            </ctable:title>   -->
+
+
+         <ctable:columns>
+                        <ctable:Column>
+                           <ctable:label>
+                                    <Label text="EmpNo"> </Label>
+                            </ctable:label> 
+
+                                <ctable:template>
+                                        <Text text="{empNo}"> </Text>
+                                </ctable:template>
+                         </ctable:Column>       
+<!-- 2nd cloumns -->
+                        <ctable:Column>
+                           <ctable:label>
+                                    <Label text="EmpName"> </Label>
+                            </ctable:label> 
+
+                            <ctable:template>
+                                    <Text text="{empName}"> </Text>
+                            </ctable:template>
+
+                        </ctable:Column>
+<!-- 3nd cloumns -->
+                        <ctable:Column>
+                                     <ctable:label>
+                                          <Label text="Salary"> </Label>
+                                     </ctable:label> 
+
+                                    <ctable:template>
+                                            <Text text="{Salary}"> </Text>
+                                    </ctable:template>
+                        </ctable:Column>
+
+<!-- 4nd cloumns -->
+                        <ctable:Column>
+                                     <ctable:label>
+                                          <Label text="Currency"> </Label>
+                                     </ctable:label> 
+
+                                    <ctable:template>
+                                            <Text text="{Currency}"> </Text>
+                                    </ctable:template>
+                        </ctable:Column>
+
+<!-- 5th cloumns -->
+
+                <ctable:Column>
+                           <ctable:label>
+                                    <Label text="Elg"> </Label>
+                            </ctable:label> 
+
+                                <ctable:template>
+                                        <CheckBox selected="{Elg}">
+                                         </CheckBox>
+                                </ctable:template>
+                         </ctable:Column>  
+                      
+<!-- 6th cloumns -->
+
+                <ctable:Column>
+                           <ctable:label>
+                                    <Label text="Gender"> </Label>
+                            </ctable:label> 
+
+                                <ctable:template>
+                                        <Image src="{Pic}" width='25px'>
+                                         </Image>
+                                </ctable:template>
+                         </ctable:Column>  
+ <!-- 7th cloumns -->
+
+                <ctable:Column>
+                           <ctable:label>
+                                    <Label text="Marital Status"> </Label>
+                            </ctable:label> 
+
+                                <ctable:template>
+                                        <CheckBox selected="{Elg}">
+                                         </CheckBox>
+                                </ctable:template>
+                         </ctable:Column>  
+                                           
+         </ctable:columns>
+
+    </ctable:Table>
+
+
+
+<cfrom:SimpleForm>
+                <cfrom:content>
+                <!-- 1st row -->
+                            <Label text="Employee number"> </Label>
+                             <Input value="{/empStr/empNo}"> </Input>
+                <!-- 2nd row  -->
+                 <!-- Remember you have to use bootstap to use the complex calculation -->
+                            <Label text="Employee Name "> </Label>
+                            <Input id="idname" value="{/empStr/empName}" 
+                           
+                                    enabled="{= ${/empStr/Salary} > 9000 ? true : false}">   
+                             </Input>
+                <!-- 3rd row  -->            
+                            <Label text="Salary"> </Label>
+                            <Input id="idsal"  value="{/empStr/Salary}" >  </Input>
+                <!-- 4th row  -->            
+                            <Label text="Currency"> </Label>
+                            <Input id="idcurr" value="{/empStr/Currency}" >  </Input>
+                           
+ 
+                </cfrom:content>
+</cfrom:SimpleForm>
+
+<!-- Button to flip the data  -->
+<Button id="btnid" text = "click here" press="pressButton"> </Button>
+
+
+<!-- create Check box -->
+<CheckBox id = "idcheckbox" text = "check it"> </CheckBox>
+
+<!-- Message Strip -->
+<MessageStrip id = "idMessStrip" text = "text message1" type="Error" showIcon = "true"> </MessageStrip>
+
+</Page>
+
+</mvc:View>
